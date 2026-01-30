@@ -98,21 +98,34 @@
             border-top: 1px solid #2a3a5a;
         }
 
-        .email a {
-            color: #8a9ab8;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-
-        .email a:hover {
-            color: #a8b8d8;
-        }
-
-        .wolf-icon {
-            font-size: 4rem;
+        .email p {
             margin-bottom: 1rem;
-            opacity: 0.9;
+            color: #8a9ab8;
+        }
+
+        .email-button {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            border: 1px solid #3a4a6a;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .email-button:hover {
+            border-color: #6b7b9b;
+            transform: translateY(-2px);
+        }
+
+        .email-button img {
+            height: 1.2em;
+            display: block;
+        }
+
+        .logo-image {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1.5rem;
         }
 
         @media (max-width: 600px) {
@@ -136,7 +149,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="wolf-icon">🐺</div>
+        <img src="StarvingwolfLogo.png" alt="Starving Wolf Studios Logo" class="logo-image">
         <h1 class="logo">Starving Wolf Studios</h1>
         <p class="tagline">Independent Game Development</p>
         
@@ -152,8 +165,14 @@
         </div>
 
         <div class="email">
-            <p>Get in touch: <a href="mailto:contact@starvingwolfstudios.com">contact@starvingwolfstudios.com</a></p>
+            <p>Get in touch:</p>
+            <div class="email-button">
+                <img src="emailpng.png" alt="Contact email">
+            </div>
         </div>
+    </div>
+</body>
+</html>
     </div>
 </body>
 </html>
